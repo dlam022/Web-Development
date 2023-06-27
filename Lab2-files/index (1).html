@@ -1,0 +1,48 @@
+<!-- By Derick Lam and Gency Dela Torre -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="main.js"></script> -->
+  </head>
+  <body>
+
+    <h1>Tic Tac Toe</h1>
+    <h2>Its your turn, <span class="display_player"></span>.</h2>
+    <p id="score">Player X&nbsp;&nbsp;&nbsp;&nbsp;Player O</p>
+    <p id="playerscore"><span class="display_xscore"></span>&nbsp;&nbsp;<span class="display_oscore"></span></p>
+    <p id="winner"></p>
+    <p id="timer">Timer: <span max="10" id="remainingTime"></span> please start game to start timer.</p>
+    <p id="notime"></p>
+    <div class="checkbox-container">
+      <input type="checkbox" id="AI" onchange="AIToggle()">
+      <label for="AI">Minmax AI (lose against it)</label>
+    </div>
+
+    <div class="game_board">
+      <div class='row'>
+        <div class="one"><span class="xo"></span></div>
+        <div class="two" ><span class="xo"></span></div>
+        <div class="three" ><span class="xo"></span></div>
+      </div>
+      <div class='row'>
+        <div class="four" ><span class="xo"></span></div>
+        <div class="five" ><span class="xo"></span></div>
+        <div class="six"><span class="xo"></span></div>
+      </div>
+      <div class='row'>
+        <div class="seven" ><span class="xo"></span></div>
+        <div class="eight" ><span class="xo"></span></div>
+        <div class="nine" ><span class="xo"></span></div>
+      </div>
+  </div>
+
+    <button class="new_game">New Game</button>
+    <button class="reset">Reset</button>
+  </body>
+
+  <script src="main.js"></script>
+</html>
